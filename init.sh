@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+yum install -y bzip2 unzip
+
+work=/data/work
 version=8.10.0
 
 wget https://nodejs.org/dist/v$version/node-v$version-linux-x64.tar.xz -O /tmp/node-v$version-linux-x64.tar.xz
@@ -12,4 +15,13 @@ echo 'export NODE_HOME=/opt/node
 export PATH=$PATH:$NODE_HOME/bin
 export NODE_PATH=$NODE_HOME/lib/node_modules'>>/etc/profile
 
-npm install pm2 vue vuex vue-cli jquery vue-router vux vue-echarts element-ui iview vue-datasource weui wepy wepy-cli zanui-weapp axios html-webpack-plugin webpack-cdn-plugin -g
+source /etc/profile
+
+npm install pm2 vue vuex vue-cli jquery vue-router vux vue-echarts element-ui iview vue-datasource weui wepy wepy-cli zanui-weapp axios html-webpack-plugin -g
+
+rm -rf ~/.npm
+
+mkdir -p $work && cd $work
+vue-init webpack video
+cd video
+npm run dev

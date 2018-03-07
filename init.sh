@@ -12,4 +12,4 @@ echo 'export NODE_HOME=/opt/node
 export PATH=$PATH:$NODE_HOME/bin
 export NODE_PATH=$NODE_HOME/lib/node_modules'>>/etc/profile
 
-npm install pm2 vue vuex vue-cli vue-loader vue-router vux vue-echarts element-ui vue-datasource weui wepy wepy-cli zanui-weapp axios html-webpack-plugin webpack-cdn-plugin -g
+npm install pm2 vue vuex vue-cli jquery vue-router vux vue-echarts element-ui iview vue-datasource weui wepy wepy-cli zanui-weapp axios html-webpack-plugin webpack-cdn-plugin -g

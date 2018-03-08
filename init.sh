@@ -17,7 +17,7 @@ export NODE_PATH=$NODE_HOME/lib/node_modules'>>/etc/profile
 
 source /etc/profile
 
-npm install pm2 vue vuex vue-cli jquery vue-router vux vue-echarts element-ui iview vue-datasource weui wepy wepy-cli zanui-weapp axios html-webpack-plugin html-webpack-externals-plugin -g
+npm install pm2 vue vuex vue-cli jquery vue-router vux v-charts echarts element-ui iview vue-datasource weui wepy wepy-cli zanui-weapp axios html-webpack-plugin html-webpack-externals-plugin -g
 
 rm -rf ~/.npm
 

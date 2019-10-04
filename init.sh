@@ -3,7 +3,7 @@
 yum install -y bzip2 unzip
 
 work=/data/work
-version=8.10.0
+version=10.16.3
 
 wget https://nodejs.org/dist/v$version/node-v$version-linux-x64.tar.xz -O /tmp/node-v$version-linux-x64.tar.xz
 xz -d /tmp/node-v$version-linux-x64.tar.xz
@@ -17,7 +17,7 @@ export NODE_PATH=$NODE_HOME/lib/node_modules'>>/etc/profile
 
 source /etc/profile
 
-npm install pm2 vue vuex vue-cli jquery vue-router vux v-charts echarts element-ui iview vue-datasource weui wepy wepy-cli zanui-weapp axios html-webpack-plugin html-webpack-externals-plugin -g
+npm install pm2 vue vuex @vue/cli jquery vue-router vux v-charts echarts element-ui weui wepy wepy-cli axios ant-design-vue -g
 
 rm -rf ~/.npm
 

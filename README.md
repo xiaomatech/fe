@@ -9,7 +9,6 @@ curl https://raw.githubusercontent.com/xiaomatech/fe/master/init.sh | bash
 webstorm plugin
 
 ```
-IntelliVue element  weapp wxapp 
+IntelliVue element  weapp wxapp  ant-design-vue
 
-https://github.com/XiangliJiaxing/webstorm-ant-design-vue-plugin
 ```
